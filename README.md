@@ -11,43 +11,45 @@ var strings = xutil.strings;
 var obj = xutil.extend({ name1: 'Hello' }, { name2: 'World!' });
 console.log(strings.format("{{name1}} {{name2}}", obj));
 ```
-#x-util
+#Modules
+
+##x-util
 Root module that exposes all the utility objects/methods.
 
-##Properties
+###Properties
 
 - common - Access to most commonly used functions like extend.
 - strings - Access to common string functions like format.
 - command - Access to common command line functions like parse.
 
-##Functions
+###Functions
 - extend - See common extend function.
 
-#common
+##common
 Contains most commonly used functions like extend.
 
-##Properties
+###Properties
 None
 
-##Functions
-- extend - Extends an object.```javascript extend({{object}}, {{extended}}) ```
+###Functions
+- extend - Recursively extends an object.```javascript extend({{object}}, {{extended}}) ```
 
-#command
+##command
 Contains functions to support a command line interface.
 
-##Properties
+###Properties
 None
 
-##Functions
+###Functions
 - parse - Parse command line arguments.```javascript parse(process.args) ```
 
-#strings
+##strings
 Contains helper string functions.
 
-##Properties
+###Properties
 None
 
-##Functions
+###Functions
 - format - Replace placeholders using object properties.```javascript format("Hello {{name}}!", { name: "World" }) ```
 
 
