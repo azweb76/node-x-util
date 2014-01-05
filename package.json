@@ -1,0 +1,25 @@
+{
+  "name": "x-util",
+  "version": "0.0.1",
+  "description": "Utility package for node modules.",
+  "main": "lib/x-util.js",
+  "scripts": {
+    "pretest": "node node_modules/jshint/bin/jshint ./lib/.",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azweb76/node-x-util.git"
+  },
+  "author": "dclayton",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "1.13.0",
+    "chai": "1.8.1",
+    "sinon": "1.7.3",
+    "istanbul": "0.1.44",
+    "mocha-istanbul": "0.2.0",
+    "jshint": "2.3.0"
+  }
+}
