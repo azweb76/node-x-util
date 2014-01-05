@@ -1,6 +1,6 @@
 {
   "name": "x-util",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility package for node modules.",
   "main": "lib/x-util.js",
   "scripts": {
