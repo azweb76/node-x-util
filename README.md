@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/azweb76/node-x-util.png?branch=master)](https://travis-ci.org/azweb76/node-x-util)
-
 #x-util
 Utility package for node applications.
 
