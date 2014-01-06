@@ -24,6 +24,29 @@ describe("strings", function() {
             assert.instanceOf(err, Error, 'should return an error');
             done();
         }
-        
+    });
+    
+    it("should end with", function(done) {
+        var flag = 'Hello World'.endsWith('World');
+        assert.isTrue(flag, "should find endsWith");
+        done();
+    });
+    
+    it("should not find null using endsWith", function(done) {
+        var flag = 'Hello World'.endsWith(null);
+        assert.isFalse(flag, "should not find null");
+        done();
+    });
+    
+    it("should start with", function(done) {
+        var flag = 'Hello World'.startsWith('Hello');
+        assert.isTrue(flag, "should find startStr");
+        done();
+    });
+    
+    it("should not find null using startsWith", function(done) {
+        var flag = 'Hello World'.startsWith(null);
+        assert.isFalse(flag, "should not find null");
+        done();
     });
 });

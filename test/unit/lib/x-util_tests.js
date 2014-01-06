@@ -12,6 +12,8 @@ describe("x-util", function() {
     it("has contract", function(done) {
         assert.ok(xUtil.command === require('../../../lib/command'));
         assert.ok(xUtil.strings === require('../../../lib/strings'));
+        assert.ok(xUtil.json === require('../../../lib/json'));
+        assert.ok(xUtil.path === require('../../../lib/path'));
         
         var common = require('../../../lib/common');
         assert.ok(xUtil.extend === common.extend);
