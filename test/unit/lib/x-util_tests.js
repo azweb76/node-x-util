@@ -14,6 +14,7 @@ describe("x-util", function() {
         assert.ok(xUtil.strings === require('../../../lib/strings'));
         assert.ok(xUtil.json === require('../../../lib/json'));
         assert.ok(xUtil.path === require('../../../lib/path'));
+        assert.ok(xUtil.object === require('../../../lib/object'));
         
         var common = require('../../../lib/common');
         assert.ok(xUtil.extend === common.extend);

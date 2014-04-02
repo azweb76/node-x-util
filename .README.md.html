@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>/home/dan/git/node-x-util/.README.md.html</title>
+
+
+<style type="text/css">
+body {
+	color: #333;
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+}
+
+.markdown-body {
+    border: 1px solid #CACACA;
+    padding: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    word-wrap: break-word;
+}
+.markdown-body > *:first-child {
+    margin-top: 0 !important;
+}
+.markdown-body > *:last-child {
+    margin-bottom: 0 !important;
+}
+.markdown-body a.absent {
+    color: #C00;
+}
+.markdown-body a.anchor {
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    left: 0;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-right: 6px;
+    position: absolute;
+    top: 0;
+}
+.markdown-body a.anchor:focus {
+    outline: medium none;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    cursor: text;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+    position: relative;
+}
+
+.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+    color: #000;
+    display: none;
+}
+.markdown-body h1:hover a.anchor, .markdown-body h2:hover a.anchor, .markdown-body h3:hover a.anchor, .markdown-body h4:hover a.anchor, .markdown-body h5:hover a.anchor, .markdown-body h6:hover a.anchor {
+    line-height: 1;
+    margin-left: -22px;
+    padding-left: 0;
+    text-decoration: none;
+    top: 15%;
+}
+.markdown-body h1:hover a.anchor .octicon-link, .markdown-body h2:hover a.anchor .octicon-link, .markdown-body h3:hover a.anchor .octicon-link, .markdown-body h4:hover a.anchor .octicon-link, .markdown-body h5:hover a.anchor .octicon-link, .markdown-body h6:hover a.anchor .octicon-link {
+    display: inline-block;
+}
+.markdown-body h1 tt, .markdown-body h1 code, .markdown-body h2 tt, .markdown-body h2 code, .markdown-body h3 tt, .markdown-body h3 code, .markdown-body h4 tt, .markdown-body h4 code, .markdown-body h5 tt, .markdown-body h5 code, .markdown-body h6 tt, .markdown-body h6 code {
+    font-size: inherit;
+}
+.markdown-body h1 {
+    border-bottom: 1px solid #DDD;
+    font-size: 2.5em;
+}
+.markdown-body h2 {
+    border-bottom: 1px solid #EEE;
+    font-size: 2em;
+}
+.markdown-body h3 {
+    font-size: 1.5em;
+}
+.markdown-body h4 {
+    font-size: 1.2em;
+}
+.markdown-body h5 {
+    font-size: 1em;
+}
+.markdown-body h6 {
+    color: #777;
+    font-size: 1em;
+}
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin: 15px 0;
+}
+.markdown-body ul, .markdown-body ol {
+    padding-left: 30px;
+}
+.markdown-body ul.no-list, .markdown-body ol.no-list {
+    list-style-type: none;
+    padding: 0;
+}
+.markdown-body ul ul, .markdown-body ul ol, .markdown-body ol ol, .markdown-body ol ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.markdown-body dl {
+    padding: 0;
+}
+.markdown-body dl dt {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0;
+}
+.markdown-body dl dd {
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.markdown-body blockquote {
+    border-left: 4px solid #DDD;
+    color: #777;
+    padding: 0 15px;
+}
+.markdown-body blockquote > *:first-child {
+    margin-top: 0;
+}
+.markdown-body blockquote > *:last-child {
+    margin-bottom: 0;
+}
+.markdown-body table {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.markdown-body table th {
+    font-weight: bold;
+}
+.markdown-body table th, .markdown-body table td {
+    border: 1px solid #DDD;
+    padding: 6px 13px;
+}
+.markdown-body table tr {
+    background-color: #FFF;
+    border-top: 1px solid #CCC;
+}
+.markdown-body table tr:nth-child(2n) {
+    background-color: #F8F8F8;
+}
+.markdown-body img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 0px;
+}
+.markdown-body span.frame {
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.frame > span {
+    border: 1px solid #DDD;
+    display: block;
+    float: left;
+    margin: 13px 0 0;
+    overflow: hidden;
+    padding: 7px;
+    width: auto;
+}
+.markdown-body span.frame span img {
+    display: block;
+    float: left;
+}
+.markdown-body span.frame span span {
+    clear: both;
+    color: #333;
+    display: block;
+    padding: 5px 0 0;
+}
+.markdown-body span.align-center {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-center > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+.markdown-body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+.markdown-body span.align-right {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-right > span {
+    display: block;
+    margin: 13px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+.markdown-body span.float-left {
+    display: block;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-left span {
+    margin: 13px 0 0;
+}
+.markdown-body span.float-right {
+    display: block;
+    float: right;
+    margin-left: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-right > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body code, .markdown-body tt {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin: 0 2px;
+    padding: 0 5px;
+}
+.markdown-body code {
+    white-space: nowrap;
+}
+.markdown-body pre > code {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+}
+.markdown-body .highlight pre, .markdown-body pre {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+}
+.markdown-body pre code, .markdown-body pre tt {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    word-wrap: normal;
+}
+
+pre, code, tt {
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    font-size: 12px;
+}
+
+.highlight {
+    background: #FFF;
+}
+.highlight .k,
+.highlight .o,
+.highlight .cp,
+.highlight .cs,
+.highlight .gs,
+.highlight .gu,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .nc,
+.highlight .ne,
+.highlight .nf,
+.highlight .ow {
+    font-weight: bold;
+}
+.highlight .gd,
+.highlight .gd .x,
+.highlight .gi,
+.highlight .gi .x,
+.type-csharp .highlight .nf,
+.type-csharp .highlight .nn {
+    color: #000;
+}
+.highlight .c,
+.highlight .cm,
+.highlight .c1 {
+    color: #998;
+    font-style: italic;
+}
+.highlight .err {
+    background-color: #E3D2D2;
+    color: #A61717;
+}
+.highlight .cp,
+.highlight .cs {
+    color: #999;
+}
+.highlight .cs,
+.highlight .ge {
+    font-style: italic;
+}
+.highlight .gd {
+    background-color: #FDD;
+}
+.highlight .gd .x {
+    background-color: #FAA;
+}
+.highlight .gr,
+.highlight .gt {
+    color: #A00;
+}
+.highlight .gh {
+    color: #999;
+}
+.highlight .gi {
+    background-color: #DFD;
+}
+.highlight .gi .x {
+    background-color: #AFA;
+}
+.highlight .go {
+    color: #888;
+}
+.highlight .gp,
+.highlight .nn {
+    color: #555;
+}
+.highlight .gu,
+.highlight .ni {
+    color: #800080;
+}
+.highlight .kt {
+    color: #458;
+}
+.highlight .m {
+    color: #099;
+}
+.highlight .s {
+    color: #D14;
+}
+.highlight .n {
+    color: #333;
+}
+.highlight .na,
+.highlight .no,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+    color: #008080;
+}
+.highlight .nb {
+    color: #0086B3;
+}
+.highlight .nc {
+    color: #458;
+}
+.highlight .ne,
+.highlight .nf {
+    color: #900;
+}
+.highlight .nt {
+    color: #000080;
+}
+.highlight .w {
+    color: #BBB;
+}
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+    color: #099;
+}
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .s1 {
+    color: #D14;
+}
+.highlight .sr {
+    color: #009926;
+}
+.highlight .ss {
+    color: #990073;
+}
+.highlight .bp {
+    color: #999;
+}
+.highlight .il {
+    color: #099;
+}
+.highlight .gc {
+    background-color: #EAF2F5;
+    color: #999;
+}
+.type-csharp .highlight .k,
+.type-csharp .highlight .kt {
+    color: #00F;
+}
+.type-csharp .highlight .nf {
+    font-weight: normal;
+}
+.type-csharp .highlight .nc {
+    color: #2B91AF;
+}
+.type-csharp .highlight .s,
+.type-csharp .highlight .sc {
+    color: #A31515;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function getDocumentScrollTop() 
+{
+   var res = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset || 0;
+   // alert(res);
+   return res;
+}
+
+function setDocumentScrollTop(ypos) 
+{
+	window.scrollTo(0, ypos);
+}
+
+</script>
+
+
+</head>
+<body class="markdown-body">
+<p><a href="https://travis-ci.org/azweb76/node-x-util"><img src="https://camo.githubusercontent.com/14ebba1843615a6a5c150bd68aceb00aa4c5893a/68747470733a2f2f7472617669732d63692e6f72672f617a77656237362f6e6f64652d782d7574696c2e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/azweb76/node-x-util.png?branch=master" style="max-width:100%;" /></a></p> 
+<h1> <a name="user-content-x-util" class="anchor" href="..md.html#x-util"><span class="octicon octicon-link"></span></a>x-util</h1> 
+<p>Utility package for node applications.</p> 
+<h1> <a name="user-content-usage" class="anchor" href="..md.html#usage"><span class="octicon octicon-link"></span></a>Usage</h1> 
+<p>npm install x-util --save</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="kd">var</span> <span class="nx">xutil</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'x-util'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">strings</span> <span class="o">=</span> <span class="nx">xutil</span><span class="p">.</span><span class="nx">strings</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">xutil</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span> <span class="nx">name1</span><span class="o">:</span> <span class="s1">'Hello'</span> <span class="p">},</span> <span class="p">{</span> <span class="nx">name2</span><span class="o">:</span> <span class="s1">'World!'</span> <span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">strings</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s2">&quot;{{name1}} {{name2}}&quot;</span><span class="p">,</span> <span class="nx">obj</span><span class="p">));</span>
+</pre>
+</div> 
+<h1> <a name="user-content-modules" class="anchor" href="..md.html#modules"><span class="octicon octicon-link"></span></a>Modules</h1> 
+<h2> <a name="user-content-x-util-1" class="anchor" href="..md.html#x-util-1"><span class="octicon octicon-link"></span></a>x-util</h2> 
+<p>Root module that exposes all the utility objects/methods.</p> 
+<h5> <a name="user-content-properties" class="anchor" href="..md.html#properties"><span class="octicon octicon-link"></span></a>Properties</h5> 
+<ul> 
+ <li>common - Access to most commonly used functions like extend.</li> 
+ <li>strings - Access to common string functions like format.</li> 
+ <li>command - Access to common command line functions like parse.</li> 
+ <li>json - Contains json helper functions like find.</li> 
+ <li>path - Contains path helper functions like find.</li> 
+</ul>
+<h5> <a name="user-content-functions" class="anchor" href="..md.html#functions"><span class="octicon octicon-link"></span></a>Functions</h5> 
+<ul> 
+ <li>extend - See common extend function.</li> 
+</ul>
+<h2> <a name="user-content-common" class="anchor" href="..md.html#common"><span class="octicon octicon-link"></span></a>common</h2> 
+<p>Contains most commonly used functions like extend.</p> 
+<h5> <a name="user-content-properties-1" class="anchor" href="..md.html#properties-1"><span class="octicon octicon-link"></span></a>Properties</h5> 
+<p>None</p> 
+<h5> <a name="user-content-functions-1" class="anchor" href="..md.html#functions-1"><span class="octicon octicon-link"></span></a>Functions</h5> 
+<ul> 
+ <li>extend - Recursively extends an object.<code>javascript extend({{object}}, {{extended}})</code> </li> 
+</ul>
+<h2> <a name="user-content-command" class="anchor" href="..md.html#command"><span class="octicon octicon-link"></span></a>command</h2> 
+<p>Contains functions to support a command line interface.</p> 
+<h5> <a name="user-content-properties-2" class="anchor" href="..md.html#properties-2"><span class="octicon octicon-link"></span></a>Properties</h5> 
+<p>None</p> 
+<h5> <a name="user-content-functions-2" class="anchor" href="..md.html#functions-2"><span class="octicon octicon-link"></span></a>Functions</h5> 
+<ul> 
+ <li>parse - Parse command line arguments.<code>javascript parse(process.args)</code> </li> 
+</ul>
+<h2> <a name="user-content-strings" class="anchor" href="..md.html#strings"><span class="octicon octicon-link"></span></a>strings</h2> 
+<p>Contains helper string functions.</p> 
+<h5> <a name="user-content-properties-3" class="anchor" href="..md.html#properties-3"><span class="octicon octicon-link"></span></a>Properties</h5> 
+<p>None</p> 
+<h5> <a name="user-content-functions-3" class="anchor" href="..md.html#functions-3"><span class="octicon octicon-link"></span></a>Functions</h5> 
+<ul> 
+ <li>format - Replace placeholders using object properties.<code>javascript format(&quot;Hello {{name}}!&quot;, { name: &quot;World&quot; })</code> </li> 
+</ul>
+<h5> <a name="user-content-extensions" class="anchor" href="..md.html#extensions"><span class="octicon octicon-link"></span></a>Extensions</h5> 
+<ul> 
+ <li>String.startsWith - Returns true is the string starts with startStr. <code>javascript 'Hello World'.startsWith('Hello')</code> </li> 
+ <li>String.endsWith - Returns true is the string ends with endStr. <code>javascript 'Hello World'.endsWith('World')</code> </li> 
+</ul>
+<h2> <a name="user-content-path" class="anchor" href="..md.html#path"><span class="octicon octicon-link"></span></a>path</h2> 
+<p>Contains path helper functions.</p> 
+<h5> <a name="user-content-properties-4" class="anchor" href="..md.html#properties-4"><span class="octicon octicon-link"></span></a>Properties</h5> 
+<p>None</p> 
+<h5> <a name="user-content-functions-4" class="anchor" href="..md.html#functions-4"><span class="octicon octicon-link"></span></a>Functions</h5> 
+<ul> 
+ <li>find - Traverses up a path to find a file or folder. <code>javascript find('/my/full/path', 'package.json')</code> </li> 
+</ul>
+<h2> <a name="user-content-json" class="anchor" href="..md.html#json"><span class="octicon octicon-link"></span></a>json</h2> 
+<p>Contains json helper functions.</p> 
+<h5> <a name="user-content-properties-5" class="anchor" href="..md.html#properties-5"><span class="octicon octicon-link"></span></a>Properties</h5> 
+<p>None</p> 
+<h5> <a name="user-content-functions-5" class="anchor" href="..md.html#functions-5"><span class="octicon octicon-link"></span></a>Functions</h5> 
+<ul> 
+ <li>find - Returns the value of an object based on a path.</li> 
+</ul>
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">find</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="p">{</span> <span class="nx">b</span><span class="o">:</span> <span class="s1">'Hello'</span> <span class="nx">c</span><span class="o">:</span> <span class="s1">'World'</span> <span class="p">}</span> <span class="p">},</span> <span class="s1">'/a/b'</span><span class="p">)</span> <span class="c1">// returns 'Hello'</span>
+</pre>
+</div> 
+<ul> 
+ <li>resolveLinks - Resolves object links.</li> 
+</ul>
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">resolveLinks</span><span class="p">({</span> <span class="nx">a</span><span class="o">:</span> <span class="p">{</span> <span class="nx">b</span><span class="o">:</span> <span class="s1">'Hello'</span> <span class="nx">_c</span><span class="o">:</span> <span class="s1">'b'</span> <span class="p">}</span> <span class="p">});</span> <span class="c1">// returns { a: { b: 'Hello', c: 'Hello' } }</span>
+</pre>
+</div> 
+<h2> <a name="user-content-object" class="anchor" href="..md.html#object"><span class="octicon octicon-link"></span></a>object</h2> 
+<p>Contains function used for managing objects.</p> 
+<h5> <a name="user-content-properties-6" class="anchor" href="..md.html#properties-6"><span class="octicon octicon-link"></span></a>Properties</h5> 
+<p>None</p> 
+<h5> <a name="user-content-functions-6" class="anchor" href="..md.html#functions-6"><span class="octicon octicon-link"></span></a>Functions</h5> 
+<ul> 
+ <li>createProvider(config) - Create an object based on a configuration.</li> 
+</ul>
+<p>Create a new object by invoking a function and passing args.</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">createProvider</span><span class="p">({</span> <span class="s2">&quot;module&quot;</span><span class="o">:</span> <span class="s2">&quot;test-module&quot;</span><span class="p">,</span> <span class="s2">&quot;args&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;function-arg1&quot;</span><span class="o">:</span> <span class="s2">&quot;test&quot;</span> <span class="p">}</span> <span class="p">})</span>
+</pre>
+</div> 
+<p>Create a new instance of the module and passing the ctorArgs into ctor.</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">createProvider</span><span class="p">({</span> <span class="s2">&quot;module&quot;</span><span class="o">:</span> <span class="s2">&quot;test-module&quot;</span><span class="p">,</span> <span class="s2">&quot;ctorArgs&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;ctor-arg1&quot;</span><span class="o">:</span> <span class="s2">&quot;test&quot;</span> <span class="p">}</span> <span class="p">})</span>
+</pre>
+</div>
+</body>
+</html>

@@ -2,3 +2,4 @@
 require('../lib/command.js');
 require('../lib/strings.js');
 require('../lib/x-util.js');
+require('../lib/object.js');

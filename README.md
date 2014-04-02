@@ -83,3 +83,22 @@ find({ a: { b: 'Hello' c: 'World' } }, '/a/b') // returns 'Hello'
 ```javascript
 resolveLinks({ a: { b: 'Hello' _c: 'b' } }); // returns { a: { b: 'Hello', c: 'Hello' } }
 ```
+
+##object
+Contains function used for managing objects.
+
+#####Properties
+None
+
+#####Functions
+- createProvider(config) - Create an object based on a configuration.
+
+Create a new object by invoking a function and passing args.
+```javascript
+createProvider({ "module": "test-module", "args": { "function-arg1": "test" } })
+```
+Create a new instance of the module and passing the ctorArgs into ctor.
+```javascript
+createProvider({ "module": "test-module", "ctorArgs": { "ctor-arg1": "test" } })
+```
+
