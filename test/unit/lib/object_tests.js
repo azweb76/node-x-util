@@ -30,6 +30,14 @@ describe("object", function() {
         done();
     });
     
+    it("should create provider by function type", function(done) {
+    	var args = { a: 1 };
+    	var fn = function(args){ return args; };
+        var o = object.createProvider({ "module": fn, "args": args });
+        assert.deepEqual(o, args, "should match args");
+        done();
+    });
+    
     it("should create provider by ctor", function(done) {
     	var args = { a: 1 };
     	var fn = function(args){ this.args = args; };
