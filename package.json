@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/azweb76/node-x-util.git"
   },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
   "author": "dclayton",
   "license": "MIT",
   "readmeFilename": "README.md",
