@@ -15,6 +15,24 @@ describe("common", function() {
             assert.deepEqual(o, { a: 1, b: 2 }, "should match extended result");
             done();
         });
+
+        it("should extend null with replace", function(done) {
+            var o = common.extend({ a: 1 }, { a: null }, true);
+            assert.deepEqual(o, { a: null }, "should match extended result");
+            done();
+        });
+
+        it("should extend 2 with replace", function(done) {
+            var o = common.extend({ a: 1 }, { a: 2 }, true);
+            assert.deepEqual(o, { a: 2 }, "should match extended result");
+            done();
+        });
+
+        it("should extend 1 without replace", function(done) {
+            var o = common.extend({ a: 1 }, { b: 2 }, true);
+            assert.deepEqual(o, { a: 1, b: 2 }, "should match extended result");
+            done();
+        });
         
         it("should not override existing", function(done) {
             var o = common.extend({ a: 1, b: 2 }, { b: 3 });

@@ -15,7 +15,7 @@ describe("path", function() {
         assert.isNotNull(p, 'should not be null');
         
         var relp = path.relative(__dirname, p);
-        assert.equal(relp, '../../../package.json', 'should match relative path');
+        assert.equal(relp, ['..','..', '..', 'package.json'].join(path.sep), 'should match relative path');
         done();
     });
     
