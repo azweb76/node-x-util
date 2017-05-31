@@ -8,13 +8,13 @@ describe("strings", function() {
         assert.isObject(strings);
         done();
     });
-    
+
     it("should parse string", function(done) {
         var o = strings.format('Hello {{name}}{{not-found}}', { name: 'World' });
         assert.equal(o, 'Hello World', "should match parsed result");
         done();
     });
-    
+
     it("should throw error on invalid placeholder", function(done) {
         try{
             var o = strings.format('Hello {{name', { name: 'World' });
@@ -25,28 +25,40 @@ describe("strings", function() {
             done();
         }
     });
-    
+
     it("should end with", function(done) {
         var flag = 'Hello World'.endsWith('World');
         assert.isTrue(flag, "should find endsWith");
         done();
     });
-    
+
     it("should not find null using endsWith", function(done) {
         var flag = 'Hello World'.endsWith(null);
         assert.isFalse(flag, "should not find null");
         done();
     });
-    
+
+    it("should find empty using endsWith", function(done) {
+        var flag = 'Hello World'.endsWith('');
+        assert.isTrue(flag, "should find empty");
+        done();
+    });
+
     it("should start with", function(done) {
         var flag = 'Hello World'.startsWith('Hello');
         assert.isTrue(flag, "should find startStr");
         done();
     });
-    
+
     it("should not find null using startsWith", function(done) {
         var flag = 'Hello World'.startsWith(null);
         assert.isFalse(flag, "should not find null");
+        done();
+    });
+
+    it("should find empty using startsWith", function(done) {
+        var flag = 'Hello World'.startsWith('');
+        assert.isTrue(flag, "should find empty");
         done();
     });
 });
